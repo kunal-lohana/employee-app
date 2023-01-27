@@ -11,6 +11,11 @@ const routes = [
     path: '/list-employee',
     name: 'EmployeeList',
     component: () => import('@/components/EmployeeList.vue')
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'PageNotFound',
+    component: () => import('@/views/PageNotFound.vue')
   }
 ]
 
